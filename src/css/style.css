@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+.container {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.my_information {
+    margin-top: 20px;
+    background-color: #f5f4f4;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 8px 9px 20px rgb(0 0 0 / 40%);
+}
+.flex_row {
+    display: flex;
+    align-items: center;
+}
+.my_photo{
+    margin-right: 60px;
+}
+.my_photo > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: 8px 9px 20px rgb(0 0 0 / 40%);
+}
+.about_me > h2 {
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+}
+.about_me > p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+table{
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+caption{
+    margin-bottom: 30px;
+    font-size: 23px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+td{
+    padding-bottom: 10px;
+    width: 30%;
+}
+.footer{
+    margin-top: 20px;
+}
+.footer_inner{
+    margin-top: 40px;
+    background-color: #f5f4f4;
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+    box-shadow: 8px 9px 20px rgb(0 0 0 / 40%);
+}
+.footer_inner > h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.flex_left > p{
+    margin-top: 8px;
+    font-size: 17px;
+}
+.footer_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_rigth img{
+    width: 45px;
+}
+.flex_left a{
+    transition: all 0.3s linear;
+}
+.flex_left a:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.flex_rigth img{
+    transition: all 0.2s linear;
+}
+.flex_rigth img:hover{
+    transform: scale(1.1);
+    animation-duration: 0.3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        transform:rotate(0turn)
+    }
+  
+    to {
+        transform:rotate(0turn)
+    }
+    
+    25% {
+        transform:rotate(0.05turn)
+    }
+    50% {
+        transform:rotate(0turn)
+    }
+    75% {
+        transform:rotate(-0.05turn)
+    }
+  }
